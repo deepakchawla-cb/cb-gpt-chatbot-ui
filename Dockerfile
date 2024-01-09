@@ -24,10 +24,10 @@ COPY --from=build /app/next-i18next.config.js ./next-i18next.config.js
 
 # Set the environment variable
 ENV DEFAULT_MODEL="mistral:latest"
-ENV OLLAMA_HOST="http://host.docker.internal:11434"
+ENV OLLAMA_HOST="http://34.135.221.120:11434"
 
 # Expose the port the app will run on
-EXPOSE 3000
+EXPOSE 80
 
 # Start the application
 CMD ["npm", "start"]
