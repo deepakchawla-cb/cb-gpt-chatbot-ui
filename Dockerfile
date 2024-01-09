@@ -27,7 +27,7 @@ ENV DEFAULT_MODEL="mistral:latest"
 ENV OLLAMA_HOST="http://34.135.221.120:11434"
 
 # Expose the port the app will run on
-EXPOSE 80
+EXPOSE 3000
 
 # Start the application
 CMD ["npm", "start"]
