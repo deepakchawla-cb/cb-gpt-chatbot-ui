@@ -303,13 +303,13 @@ const Home = ({ defaultModelId }: Props) => {
       }}
     >
       <Head>
-        <title>Chatbot Ollama</title>
-        <meta name="description" content="ChatGPT but local." />
+        <title>CB GPT</title>
+        <meta name="description" content="CB GPT" />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/CBColorIcon.svg" />
       </Head>
       {selectedConversation && (
         <main
@@ -339,8 +339,9 @@ const Home = ({ defaultModelId }: Props) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
-  const defaultModelId = 
-  process.env.DEFAULT_MODEL || fallbackModelID;
+  // const defaultModelId = 
+  // process.env.DEFAULT_MODEL || fallbackModelID;
+  const defaultModelId = process.env.DEFAULT_MODEL || fallbackModelID;
 
   return {
     props: {
